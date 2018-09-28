@@ -11,6 +11,7 @@
     "lint": "eslint src",
     "predeploy": "webpack --mode production --config webpack.config.pages.js",
     "deploy": "gh-pages -d pages",
+    "prepare": "npm run build",
     "prepublish": "npm run lint && npm run test && npm run build"
   },
   "repository": {
