@@ -130,7 +130,7 @@ class Slider extends React.PureComponent {
 		const classNames = this.getClassNames();
 		const lastSlideIndex = this.slideCount - 1;
 		if (index === currentSlideIndex) {
-			if (animation) return `${classNames.animateOut} ${classNames[animation]}`;
+			if (animation) return classNames.previous;
 			return classNames.current;
 		}
 		if (this.slideCount === 2) {
